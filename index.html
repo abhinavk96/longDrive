@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Long Drive</title>
+	<link rel = "stylesheet" type = "text/css" href = "css/main.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+  	
+  </script>
+</head>
+<body>
+<div id = "bg"></div>
+<div id = "traverse-left"></div>
+<div id = "traverse-right"></div>
+<div id = "bottom-area">
+</div>
+</body>
+<script>
+$("#traverse-right").mousedown(function(){
+	console.log('Hello');
+	intervalId = setInterval(function(){ 
+	var leftPos = $('body').scrollLeft();
+	$("body").animate({
+		scrollLeft:leftPos+205}, 100);
+	$("#bg").animate({
+		scrollLeft:leftPos+55}, 100);
+},100);}).mouseup(function(){
+	clearInterval(intervalId);
+});
+$(window).scroll(function()
+{
+console.log("his");
+	var leftPos = $('#bg').position();
+
+	console.log(leftPos);
+	$("#bg").css({
+		"left":leftPos.left-2
+	});
+});
+	 
+</script>
+</html>

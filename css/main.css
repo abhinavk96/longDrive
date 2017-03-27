@@ -1,0 +1,54 @@
+body
+{
+	overflow-y: hidden;
+	/*overflow-x: hidden;*/
+	height:100%;
+	
+	/*scroll:no;*/
+}
+#bg
+{
+	position: fixed;
+
+	top:0;
+	background:url('../images/clouds.png');
+	background-color:#CAEBEE;
+	background-repeat: repeat-x;
+	height:100%;
+	width:400vw;
+}
+
+#bottom-area 
+{
+	position:absolute;
+	bottom:0;
+	background : url('../images/bottom.png');
+	background-repeat: repeat-x;
+	width:400vw;
+	height:200px;
+	left:0;
+
+}
+
+#traverse-left
+{
+position: fixed;
+background-color:green;
+height:40px;
+width:40px;
+
+left:0;
+top:400px;
+}
+
+#traverse-right
+{
+position: fixed;
+background-color:green;
+height:40px;
+width:40px;
+
+right:0;
+top:400px;
+
+}
