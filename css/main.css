@@ -1,3 +1,8 @@
+
+html{
+	margin:0;
+	padding:0;
+}
 body
 {
 	overflow-y: hidden;
@@ -28,6 +33,7 @@ body
 	background:url('../images/car.png');
 	background-size: contain;
 	background-repeat: no-repeat;
+	z-index: 100;
 
 }
 #car2
@@ -92,6 +98,67 @@ height:80px;
 width:80px;
 right:0;
 
+}
+#distant-skyline
+{
+	/*z-index:50;*/
+	position:absolute;
+	bottom:24.5%;
+
+	background : url('../images/distant-skyline.png');
+	background-size: contain;
+	background-repeat: repeat;
+	width:4000vw;
+	z-index: 1;
+	height:40%;
+	left:0;
+}
+#fade-skyline
+{
+	/*z-index:50;*/
+	position:absolute;
+	bottom:22.5%;
+	background : url('../images/fade-skyline.png');
+	background-repeat: repeat;
+	background-size: contain;
+	width:4000vw;
+	height:50%;
+	z-index:0;
+	left:0;
+}
+#near-skyline
+{
+	/*z-index:50;*/
+	position:absolute;
+	bottom:17.5%;
+	background : url('../images/near-skyline.png');
+	background-repeat: repeat;
+	background-size: contain;
+	width:4000vw;
+	height:50%;
+	z-index:2;
+	left:0;
+}
+#airplane1
+{
+	position:absolute;
+	top: 10%;
+	background:url('../images/airplane1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:10vw;
+	height:5vw;
+	animation: fly1 1000s linear infinite;
+
+}
+
+@keyframes fly1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(4000vw);
+  }
 }
 
 #stars {
