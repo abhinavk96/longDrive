@@ -28,8 +28,8 @@ body
 	position:fixed;
 	left:20%;
 	bottom:17%;
-	height:100px;
-	width:220px;
+	height:6vw;
+	width:14vw;
 	background:url('../images/car.png');
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -148,7 +148,7 @@ right:0;
 	background-repeat: no-repeat;
 	width:10vw;
 	height:5vw;
-	animation: fly1 1000s linear infinite;
+	animation: fly1 500s linear infinite;
 
 }
 
