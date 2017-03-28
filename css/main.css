@@ -1,7 +1,7 @@
 body
 {
 	overflow-y: hidden;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	/*overflow-x: hidden;*/
 	height:100%;
 	
@@ -22,7 +22,7 @@ body
 {
 	position:fixed;
 	left:20%;
-	bottom:165px;
+	bottom:17%;
 	height:100px;
 	width:220px;
 	background:url('../images/car.png');
@@ -79,7 +79,7 @@ background-size: contain;
 height:80px;
 width:80px;
 left:0;
-top:400px;
+top: 50%;
 }
 
 #traverse-right
@@ -87,11 +87,10 @@ top:400px;
 position: fixed;
 background:url('../images/right-arrow.png');
 background-size: contain;
-
+top:50%;
 height:80px;
 width:80px;
 right:0;
-top:400px;
 
 }
 
