@@ -46,6 +46,8 @@ body
 	background:url('../images/car-2.png');
 	background-size: contain;
 	background-repeat: no-repeat;
+	top:62%;
+	z-index:3;
 
 }
 #bottom-area 
