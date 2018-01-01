@@ -9,9 +9,9 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous">
-  	
+
   </script>
-  
+
 </head>
 <body>
 <!-- <div id='stars'></div>
@@ -26,7 +26,7 @@
 <div id = "fade-skyline"></div>
 <div id = "distant-skyline"></div>
 <div id = "near-skyline"></div>
-<div id = "road""></div>
+<div id = "road"></div>
 <div id = "bottom-area">
 </div>
 </body>
@@ -34,21 +34,21 @@
 $('body').scrollLeft(0);
 $("#traverse-right").mousedown(function(){
 	console.log('Hello');
-	intervalId = setInterval(function(){ 
+	intervalId = setInterval(function(){
 	var leftPos = $('body').scrollLeft();
 	$("body").animate({
 		scrollLeft:leftPos+305}, 100);
-	
+
 },100);}).mouseup(function(){
 	clearInterval(intervalId);
 });
 $("#traverse-left").mousedown(function(){
 	console.log('Hello');
-	intervalId = setInterval(function(){ 
+	intervalId = setInterval(function(){
 	var leftPos = $('body').scrollLeft();
 	$("body").animate({
 		scrollLeft:leftPos-305}, 100);
-	
+
 },100);}).mouseup(function(){
 	clearInterval(intervalId);
 });
@@ -73,6 +73,6 @@ console.log("his");
 	// 	});
 	// }
 });
-	 
+
 </script>
 </html>
